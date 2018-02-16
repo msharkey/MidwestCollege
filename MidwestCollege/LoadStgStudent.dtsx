@@ -1,0 +1,2168 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/15/2018 2:47:46 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="OMC-5CG6151GZF"
+  DTS:CreatorName="INTRANET\MASHARKEY"
+  DTS:DTSID="{312C127D-083B-4370-ACE6-DCE3C64BA11F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.3002.68"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="LoadStgStudent"
+  DTS:PackageType="5"
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{1B48F476-8565-460B-943F-0577BA08637C}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{BAF8DDA1-2FF2-453A-B649-721999CF142C}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::StudentFile]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Student_AK "
+              DTS:DTSID="{B7A5C394-340F-4FBA-9B56-5EEB21D8A991}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" First_Name "
+              DTS:DTSID="{4BFB1DE4-7274-4027-AF46-A7C8CF6543B3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Last_Name "
+              DTS:DTSID="{62E25742-2FA1-4EF7-BC6D-D10E6932A9FC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Birth_date "
+              DTS:DTSID="{BE76A2C3-83DB-4D17-A21E-FB4D225966BC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Marital_Status "
+              DTS:DTSID="{97A87AEC-283F-4E80-AAB2-1230797F4AED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Gender "
+              DTS:DTSID="{877F8645-CBE8-4DA3-B8CC-A3B653718A66}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Race "
+              DTS:DTSID="{55F018CF-BF11-4350-A25C-AF80E0E370C0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" major_1_ak "
+              DTS:DTSID="{04FB7FD3-4D6C-446A-8313-E38D8831B31D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" major_2_ak "
+              DTS:DTSID="{43A8BCB7-4750-4D42-81E7-02BEBD3BA39C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" minor_ak "
+              DTS:DTSID="{C2CA46C6-9458-43EB-B823-E1BE1E096BF2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Housing_Status "
+              DTS:DTSID="{E7732EA5-466B-48D2-9587-565C08126BEF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Full_Time Part_Time "
+              DTS:DTSID="{9469C3B1-5072-48DE-AEAB-A895846F9A6E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Legacy_Status "
+              DTS:DTSID="{052A90B4-2CFD-47C9-9FC3-01444CB1A723}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Transfer_Flag "
+              DTS:DTSID="{86275EB6-4F57-4620-94F7-6183F986A407}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Financial_Aid "
+              DTS:DTSID="{2BF1DE7E-2A9D-42D0-A715-589BA670AB6F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Current "
+              DTS:DTSID="{D6DFA76F-A575-46EF-8FC6-EE890ACEDBD0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Address_1 "
+              DTS:DTSID="{5D4F18DC-17C5-4989-9BB4-62837A059AA6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Address_2 "
+              DTS:DTSID="{3ED3ED84-78F8-4931-BBCC-C25B36E3BDD7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" City "
+              DTS:DTSID="{8E313512-767A-4499-A035-07A9AB827423}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" State "
+              DTS:DTSID="{324A3562-F502-4DD8-B547-34AB8312AC72}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Zip_Code "
+              DTS:DTSID="{8372BC68-6D31-4391-933F-D8AC043603AC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Country "
+              DTS:DTSID="{95348050-8D50-4574-8B4F-28F6513E1609}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Phone_Number "
+              DTS:DTSID="{FC1A5C24-7AA5-4DFA-9422-127C6706C158}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Email_Address "
+              DTS:DTSID="{60D10256-1E9A-4D88-A6CB-7F3E3DEB6158}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Financial_Aid_Type "
+              DTS:DTSID="{FFAAB2D0-8194-4F70-8D5F-456733F13FF5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Start_date "
+              DTS:DTSID="{894EBCF4-2F3E-42BC-B0CB-68126B9A42D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" End_Date "
+              DTS:DTSID="{4984A97C-ECD5-461D-8502-2820A7AFF6C3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" graduation_date "
+              DTS:DTSID="{68EE2303-3D79-4957-89EC-09DA69F322BA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" act "
+              DTS:DTSID="{D39800C8-6E16-47DC-9CAB-C15437B9ACDC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" sat "
+              DTS:DTSID="{AE9D3654-72C4-4308-9641-78B50170F676}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" high_school_gpa "
+              DTS:DTSID="{1F643458-87AA-4CB9-ADD0-D4F20E829478}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" highschoolrank"
+              DTS:DTSID="{FAD533C0-7168-4564-8524-A8ACCED379C0}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{AEC3D387-ECAD-4346-AD0C-E30781712078}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="DonorFile">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C5234F93-0BE8-4216-B933-C086E00BBD87}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="StudentFile">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\FEL - Process Student Files"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{EC39D895-E861-4442-A073-F10FFDE5332E}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="FEL - Process Student Files">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{649AE194-3826-4924-B0E3-B408A5CD2054}"
+        DTS:ObjectName="{649AE194-3826-4924-B0E3-B408A5CD2054}">
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="C:\Users\MaSharkey\Desktop\MidwestUniveristy\MidwestUniveristyFlatFiles\Student" />
+            <FEFEProperty
+              FileSpec="Student*.csv" />
+            <FEFEProperty
+              FileNameRetrievalType="0" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\FEL - Process Student Files\DFT - Load Student Stage"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{D94C31C8-0F42-4FAA-BE64-882DCD9A887E}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="DFT - Load Student Stage"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Data Conversion"
+                  componentClassID="Microsoft.DataConvert"
+                  contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Data Conversion"
+                  name="Data Conversion"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Data Conversion.Inputs[Data Conversion Input]"
+                      name="Data Conversion Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Data Conversion.Inputs[Data Conversion Input].Columns[Student_AK ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Student_AK "
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Student_AK ]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Data Conversion.Outputs[Data Conversion Output]"
+                      exclusionGroup="1"
+                      name="Data Conversion Output"
+                      synchronousInputId="Package\FEL - Process Student Files\DFT - Load Student Stage\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Data Conversion.Outputs[Data Conversion Output].Columns[Student_AK]"
+                          dataType="i2"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Data Conversion.Outputs[Data Conversion Output].Columns[Student_AK]"
+                          name="Student_AK"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Student_AK ]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Data Conversion.Outputs[Data Conversion Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Data Conversion Error Output"
+                      synchronousInputId="Package\FEL - Process Student Files\DFT - Load Student Stage\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1033"
+                  name="Flat File Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                      connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Student_AK ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Student_AK ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Student_AK ]"
+                          name="Student_AK "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ First_Name ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ First_Name ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ First_Name ]"
+                          name=" First_Name "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Last_Name ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Last_Name ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Last_Name ]"
+                          name=" Last_Name "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Birth_date ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Birth_date ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Birth_date ]"
+                          name=" Birth_date "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Marital_Status ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Marital_Status ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Marital_Status ]"
+                          name=" Marital_Status "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Gender ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Gender ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Gender ]"
+                          name=" Gender "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Race ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Race ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Race ]"
+                          name=" Race "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ major_1_ak ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ major_1_ak ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ major_1_ak ]"
+                          name=" major_1_ak "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ major_2_ak ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ major_2_ak ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ major_2_ak ]"
+                          name=" major_2_ak "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ minor_ak ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ minor_ak ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ minor_ak ]"
+                          name=" minor_ak "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Housing_Status ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Housing_Status ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Housing_Status ]"
+                          name=" Housing_Status "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Full_Time Part_Time ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Full_Time Part_Time ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Full_Time Part_Time ]"
+                          name=" Full_Time Part_Time "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Legacy_Status ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Legacy_Status ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Legacy_Status ]"
+                          name=" Legacy_Status "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Transfer_Flag ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Transfer_Flag ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Transfer_Flag ]"
+                          name=" Transfer_Flag "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Financial_Aid ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Financial_Aid ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Financial_Aid ]"
+                          name=" Financial_Aid "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Current ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Current ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Current ]"
+                          name=" Current "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Address_1 ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Address_1 ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Address_1 ]"
+                          name=" Address_1 "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Address_2 ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Address_2 ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Address_2 ]"
+                          name=" Address_2 "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ City ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ City ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ City ]"
+                          name=" City "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ State ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ State ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ State ]"
+                          name=" State "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Zip_Code ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Zip_Code ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Zip_Code ]"
+                          name=" Zip_Code "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Country ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Country ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Country ]"
+                          name=" Country "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Phone_Number ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Phone_Number ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Phone_Number ]"
+                          name=" Phone_Number "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Email_Address ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Email_Address ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Email_Address ]"
+                          name=" Email_Address "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Financial_Aid_Type ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Financial_Aid_Type ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Financial_Aid_Type ]"
+                          name=" Financial_Aid_Type "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Start_date ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Start_date ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Start_date ]"
+                          name=" Start_date "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ End_Date ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ End_Date ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ End_Date ]"
+                          name=" End_Date "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ graduation_date ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ graduation_date ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ graduation_date ]"
+                          name=" graduation_date "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ act ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ act ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ act ]"
+                          name=" act "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ sat ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ sat ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ sat ]"
+                          name=" sat "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ high_school_gpa ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ high_school_gpa ]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ high_school_gpa ]"
+                          name=" high_school_gpa "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ highschoolrank]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ highschoolrank]"
+                          length="50"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ highschoolrank]"
+                          name=" highschoolrank"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Student_AK ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Student_AK " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ First_Name ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" First_Name " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Last_Name ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" Last_Name " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Birth_date ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" Birth_date " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Marital_Status ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" Marital_Status " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Gender ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" Gender " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Race ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" Race " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ major_1_ak ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" major_1_ak " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ major_2_ak ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" major_2_ak " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ minor_ak ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" minor_ak " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Housing_Status ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" Housing_Status " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Full_Time Part_Time ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" Full_Time Part_Time " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Legacy_Status ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" Legacy_Status " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Transfer_Flag ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" Transfer_Flag " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Financial_Aid ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" Financial_Aid " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Current ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" Current " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Address_1 ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" Address_1 " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Address_2 ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" Address_2 " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ City ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" City " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ State ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" State " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Zip_Code ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" Zip_Code " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Country ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" Country " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Phone_Number ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" Phone_Number " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Email_Address ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" Email_Address " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Financial_Aid_Type ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" Financial_Aid_Type " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Start_date ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" Start_date " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ End_Date ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" End_Date " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ graduation_date ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" graduation_date " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ act ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" act " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ sat ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" sat " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ high_school_gpa ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" high_school_gpa " />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ highschoolrank]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name=" highschoolrank" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[Stg].[Student]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="{BF33C736-A16A-4C56-8752-1E7A9050B855}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[__snapman.StudentDataMart]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Student_AK ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Student_AK "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Student_AK]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Student_AK ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ First_Name ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" First_Name "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[First_Name]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ First_Name ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ Last_Name ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" Last_Name "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Last_Name]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Last_Name ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ Birth_date ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" Birth_date "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Birth_date]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Birth_date ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ Marital_Status ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" Marital_Status "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Marital_Status]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Marital_Status ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ Gender ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" Gender "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Gender ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ Race ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" Race "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Race]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Race ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ major_1_ak ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" major_1_ak "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[major_1_ak]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ major_1_ak ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ major_2_ak ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" major_2_ak "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[major_2_ak]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ major_2_ak ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ minor_ak ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" minor_ak "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[minor_ak]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ minor_ak ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ Housing_Status ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" Housing_Status "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Housing_Status]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Housing_Status ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ Full_Time Part_Time ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" Full_Time Part_Time "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Full_Time_Part_Time]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Full_Time Part_Time ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ Legacy_Status ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" Legacy_Status "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Legacy_Status]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Legacy_Status ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ Transfer_Flag ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" Transfer_Flag "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Transfer_Flag]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Transfer_Flag ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ Financial_Aid ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" Financial_Aid "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Financial_Aid]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Financial_Aid ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ Current ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" Current "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Current]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Current ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ Address_1 ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" Address_1 "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Address_1]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Address_1 ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ Address_2 ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" Address_2 "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Address_2]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Address_2 ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ City ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" City "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[City]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ City ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ State ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" State "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[State]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ State ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ Zip_Code ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" Zip_Code "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Zip_Code]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Zip_Code ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ Country ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" Country "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Country ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ Phone_Number ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" Phone_Number "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Phone_Number]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Phone_Number ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ Email_Address ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" Email_Address "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Email_Address]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Email_Address ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ Financial_Aid_Type ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" Financial_Aid_Type "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Financial_Aid_Type]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Financial_Aid_Type ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ Start_date ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" Start_date "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Start_date]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Start_date ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ End_Date ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" End_Date "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[End_Date]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ End_Date ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ graduation_date ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" graduation_date "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[graduation_date]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ graduation_date ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ act ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" act "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[act]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ act ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ sat ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" sat "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sat]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ sat ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ high_school_gpa ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" high_school_gpa "
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[high_school_gpa]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ high_school_gpa ]" />
+                        <inputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ highschoolrank]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName=" highschoolrank"
+                          externalMetadataColumnId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[highschoolrank]"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ highschoolrank]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Student_AK]"
+                          dataType="i2"
+                          name="Student_AK" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[First_Name]"
+                          codePage="1252"
+                          dataType="str"
+                          length="11"
+                          name="First_Name" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Last_Name]"
+                          codePage="1252"
+                          dataType="str"
+                          length="12"
+                          name="Last_Name" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Birth_date]"
+                          dataType="dbTimeStamp"
+                          name="Birth_date" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Marital_Status]"
+                          dataType="i2"
+                          name="Marital_Status" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                          codePage="1252"
+                          dataType="str"
+                          length="3"
+                          name="Gender" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Race]"
+                          codePage="1252"
+                          dataType="str"
+                          length="18"
+                          name="Race" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[major_1_ak]"
+                          dataType="i2"
+                          name="major_1_ak" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[major_2_ak]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="major_2_ak" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[minor_ak]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="minor_ak" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Housing_Status]"
+                          codePage="1252"
+                          dataType="str"
+                          length="5"
+                          name="Housing_Status" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Full_Time_Part_Time]"
+                          codePage="1252"
+                          dataType="str"
+                          length="3"
+                          name="Full_Time_Part_Time" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Legacy_Status]"
+                          dataType="i2"
+                          name="Legacy_Status" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Transfer_Flag]"
+                          dataType="i2"
+                          name="Transfer_Flag" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Financial_Aid]"
+                          dataType="i2"
+                          name="Financial_Aid" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Current]"
+                          dataType="i2"
+                          name="Current" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Address_1]"
+                          codePage="1252"
+                          dataType="str"
+                          length="35"
+                          name="Address_1" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Address_2]"
+                          codePage="1252"
+                          dataType="str"
+                          length="33"
+                          name="Address_2" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[City]"
+                          codePage="1252"
+                          dataType="str"
+                          length="16"
+                          name="City" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[State]"
+                          codePage="1252"
+                          dataType="str"
+                          length="16"
+                          name="State" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Zip_Code]"
+                          dataType="i4"
+                          name="Zip_Code" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
+                          codePage="1252"
+                          dataType="str"
+                          length="15"
+                          name="Country" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Phone_Number]"
+                          codePage="1252"
+                          dataType="str"
+                          length="14"
+                          name="Phone_Number" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Email_Address]"
+                          codePage="1252"
+                          dataType="str"
+                          length="42"
+                          name="Email_Address" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Financial_Aid_Type]"
+                          codePage="1252"
+                          dataType="str"
+                          length="21"
+                          name="Financial_Aid_Type" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Start_date]"
+                          dataType="dbTimeStamp"
+                          name="Start_date" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[End_Date]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="End_Date" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[graduation_date]"
+                          codePage="1252"
+                          dataType="str"
+                          length="20"
+                          name="graduation_date" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[act]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="act" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sat]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="sat" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[high_school_gpa]"
+                          dataType="cy"
+                          name="high_school_gpa" />
+                        <externalMetadataColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[highschoolrank]"
+                          codePage="1252"
+                          dataType="str"
+                          length="5"
+                          name="highschoolrank" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\FEL - Process Student Files\DFT - Load Student Stage.Paths[Data Conversion Output]"
+                  endId="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Data Conversion Output"
+                  startId="Package\FEL - Process Student Files\DFT - Load Student Stage\Data Conversion.Outputs[Data Conversion Output]" />
+                <path
+                  refId="Package\FEL - Process Student Files\DFT - Load Student Stage.Paths[Flat File Source Output]"
+                  endId="Package\FEL - Process Student Files\DFT - Load Student Stage\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Flat File Source Output"
+                  startId="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{B5255857-035C-4DF3-998D-01A181426938}"
+          DTS:ObjectName="{B5255857-035C-4DF3-998D-01A181426938}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::StudentFile" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate Stg"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{170994C0-8E22-4E72-AB39-651C184C6647}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate Stg"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{BF33C736-A16A-4C56-8752-1E7A9050B855}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE stg.Student" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{BFE7F357-8066-41F0-9AB1-896611C73D43}"
+      DTS:From="Package\Truncate Stg"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\FEL - Process Student Files" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="201,42"
+          Id="Package\FEL - Process Student Files\DFT - Load Student Stage"
+          TopLeft="66,48" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="325,217"
+          Size="325,260"
+          Id="Package\FEL - Process Student Files"
+          TopLeft="301,170" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Truncate Stg"
+          TopLeft="390,49" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="461.5,91">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,79"
+              Start="0,0"
+              End="0,71.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,71.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\FEL - Process Student Files\DFT - Load Student Stage">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\FEL - Process Student Files\DFT - Load Student Stage\Flat File Source"
+          TopLeft="346,134" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination"
+          TopLeft="337,295" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\FEL - Process Student Files\DFT - Load Student Stage\Data Conversion"
+          TopLeft="466,204" />
+        <EdgeLayout
+          Id="Package\FEL - Process Student Files\DFT - Load Student Stage.Paths[Flat File Source Output]"
+          TopLeft="421.5,176">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="122.5,28"
+              Start="0,0"
+              End="122.5,20.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10"
+                    Point2="0,14"
+                    Point3="4,14" />
+                  <mssgle:LineSegment
+                    End="118.5,14" />
+                  <mssgle:CubicBezierSegment
+                    Point1="118.5,14"
+                    Point2="122.5,14"
+                    Point3="122.5,18" />
+                  <mssgle:LineSegment
+                    End="122.5,20.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FEL - Process Student Files\DFT - Load Student Stage.Paths[Data Conversion Output]"
+          TopLeft="544,246">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-121.5,49"
+              Start="0,0"
+              End="-121.5,41.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.5"
+                    Point2="0,24.5"
+                    Point3="-4,24.5" />
+                  <mssgle:LineSegment
+                    End="-117.5,24.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-117.5,24.5"
+                    Point2="-121.5,24.5"
+                    Point3="-121.5,28.5" />
+                  <mssgle:LineSegment
+                    End="-121.5,41.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\FEL - Process Student Files\DFT - Load Student Stage\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
