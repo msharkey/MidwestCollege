@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="LoadStgDonor"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{8C8480DA-F021-4A2A-AA19-900EE2A18359}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{E2A250E4-7EE5-4D8C-B0C6-C0F145F5E26D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -36,47 +36,46 @@
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="donor_ak"
-              DTS:DTSID="{2360CEEE-092E-427F-9825-27135EA1F063}"
+              DTS:DTSID="{4F52F362-A349-4BCD-96AE-A1421A4E4E6C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="9"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="First_Name"
-              DTS:DTSID="{6A0DBE51-036C-4ECC-BAE1-6E2F51FD3C40}"
+              DTS:DTSID="{A2DCC044-E5FF-4D4A-BC7A-B3B5FA65B10E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="10"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Last_Name"
-              DTS:DTSID="{C67C5B69-7E24-40C2-930D-B01C1B45EF99}"
+              DTS:DTSID="{4B77B241-A915-4106-905D-CCB0B23875C6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="6"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Prefix"
-              DTS:DTSID="{C03E0ECB-477E-4816-88C9-57623C6E8637}"
+              DTS:DTSID="{2BFA1BC5-525F-49CC-9E71-69B0EA418ACC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="12"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Income_Level"
-              DTS:DTSID="{BDC380CC-68CE-4CF2-BC11-42666FFC40D4}"
+              DTS:DTSID="{C19B267D-56F5-4B7B-9FD0-AD72E437FF19}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -85,7 +84,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Address_1"
-              DTS:DTSID="{A12872C2-40BD-4C6D-BECE-2C04A0DBE5A1}"
+              DTS:DTSID="{D6B70FBC-92EA-4B37-9F5C-0CC708DC319E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -94,7 +93,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Address_2"
-              DTS:DTSID="{FC3045CA-8860-4A2F-B378-05FC19485E76}"
+              DTS:DTSID="{97E0127E-3F93-43F5-98A6-08C42507265C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -103,7 +102,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="City"
-              DTS:DTSID="{A058B584-2B49-48AF-A182-48827ACA0D34}"
+              DTS:DTSID="{DFDDA68F-35BB-44B1-B625-842D27D8D8D9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -112,16 +111,15 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="State"
-              DTS:DTSID="{338E1E48-EE23-444C-83D1-8C2AFD8315A9}"
+              DTS:DTSID="{5F93A814-8F98-46EC-97A6-4C00315DAB57}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Zip_Code"
-              DTS:DTSID="{338BDE4D-39B2-457F-BD10-90CF71FB9FC7}"
+              DTS:DTSID="{85829205-58A8-42EB-B1B0-F950847E9DE3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -130,7 +128,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Country"
-              DTS:DTSID="{CC0DC9FD-AD00-45CC-A834-6042A046D7E6}"
+              DTS:DTSID="{91B09DA9-A73D-4FC8-9B9B-031DFDDFFC37}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -139,7 +137,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Relationship"
-              DTS:DTSID="{79BDB77D-4484-4567-8864-C33752B92025}"
+              DTS:DTSID="{6E9AD711-4C9C-4BB2-BCC3-CFA2B817966C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -148,34 +146,31 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Giving_Level"
-              DTS:DTSID="{ACAB6C71-D5AB-4EEE-93E3-66FE8D916EEB}"
+              DTS:DTSID="{8C012FC3-1820-4FA6-9C93-AF37E6DA78CE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="student_ak"
-              DTS:DTSID="{27522754-7EC5-4C69-93E0-AAFFA649477B}"
+              DTS:DTSID="{FA2EB18E-EF15-407F-AFAF-F38FCFB47C24}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="Start_Date"
-              DTS:DTSID="{91CE5F84-4E2D-4F30-90A5-C5F70F673D39}"
+              DTS:DTSID="{B52C6CFF-E73C-4783-A5EF-35B0F2704D09}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="End_Date"
-              DTS:DTSID="{ACFF42C2-3064-4864-A4EC-4A3C1B2ABF0C}"
+              DTS:DTSID="{B6B540F0-FB41-40EA-954F-DA23E4572624}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -229,7 +224,7 @@
             <FEFEProperty
               Folder="C:\Users\MaSharkey\Desktop\MidwestUniveristy\MidwestUniveristyFlatFiles\Donor" />
             <FEFEProperty
-              FileSpec="Donor*.csv" />
+              FileSpec="donor*.txt" />
             <FEFEProperty
               FileNameRetrievalType="0" />
             <FEFEProperty
@@ -286,12 +281,10 @@
                       <outputColumns>
                         <outputColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[donor_ak]"
-                          codePage="1252"
-                          dataType="str"
+                          dataType="i2"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[donor_ak]"
-                          length="50"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[donor_ak]"
                           name="donor_ak"
                           truncationRowDisposition="FailComponent">
@@ -313,7 +306,7 @@
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[First_Name]"
-                          length="50"
+                          length="9"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[First_Name]"
                           name="First_Name"
                           truncationRowDisposition="FailComponent">
@@ -335,7 +328,7 @@
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Last_Name]"
-                          length="50"
+                          length="10"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Last_Name]"
                           name="Last_Name"
                           truncationRowDisposition="FailComponent">
@@ -357,7 +350,7 @@
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Prefix]"
-                          length="50"
+                          length="6"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Prefix]"
                           name="Prefix"
                           truncationRowDisposition="FailComponent">
@@ -379,7 +372,7 @@
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Income_Level]"
-                          length="50"
+                          length="12"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Income_Level]"
                           name="Income_Level"
                           truncationRowDisposition="FailComponent">
@@ -484,12 +477,10 @@
                         </outputColumn>
                         <outputColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Zip_Code]"
-                          codePage="1252"
-                          dataType="str"
+                          dataType="i4"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Zip_Code]"
-                          length="50"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Zip_Code]"
                           name="Zip_Code"
                           truncationRowDisposition="FailComponent">
@@ -572,12 +563,10 @@
                         </outputColumn>
                         <outputColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[student_ak]"
-                          codePage="1252"
-                          dataType="str"
+                          dataType="i2"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[student_ak]"
-                          length="50"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[student_ak]"
                           name="student_ak"
                           truncationRowDisposition="FailComponent">
@@ -594,12 +583,10 @@
                         </outputColumn>
                         <outputColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Start_Date]"
-                          codePage="1252"
-                          dataType="str"
+                          dataType="date"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Start_Date]"
-                          length="50"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Start_Date]"
                           name="Start_Date"
                           truncationRowDisposition="FailComponent">
@@ -616,12 +603,10 @@
                         </outputColumn>
                         <outputColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[End_Date]"
-                          codePage="1252"
-                          dataType="str"
+                          dataType="dbTimeStamp"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[End_Date]"
-                          length="50"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[End_Date]"
                           name="End_Date"
                           truncationRowDisposition="FailComponent">
@@ -641,33 +626,31 @@
                         isUsed="True">
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[donor_ak]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="i2"
                           name="donor_ak" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[First_Name]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="9"
                           name="First_Name" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Last_Name]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="10"
                           name="Last_Name" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Prefix]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="6"
                           name="Prefix" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Income_Level]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="12"
                           name="Income_Level" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Address_1]"
@@ -695,9 +678,7 @@
                           name="State" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Zip_Code]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="i4"
                           name="Zip_Code" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Country]"
@@ -719,21 +700,15 @@
                           name="Giving_Level" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[student_ak]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="i2"
                           name="student_ak" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Start_Date]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="date"
                           name="Start_Date" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[End_Date]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="dbTimeStamp"
                           name="End_Date" />
                       </externalMetadataColumns>
                     </output>
@@ -782,7 +757,7 @@
                     <property
                       dataType="System.String"
                       description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[Stg].[Donor]</property>
+                      name="OpenRowset">[Stg].[donor]</property>
                     <property
                       dataType="System.String"
                       description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -840,9 +815,7 @@
                       <inputColumns>
                         <inputColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[donor_ak]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="i2"
                           cachedName="donor_ak"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[donor_ak]"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[donor_ak]" />
@@ -850,7 +823,7 @@
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[First_Name]"
                           cachedCodepage="1252"
                           cachedDataType="str"
-                          cachedLength="50"
+                          cachedLength="9"
                           cachedName="First_Name"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[First_Name]"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[First_Name]" />
@@ -858,7 +831,7 @@
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Last_Name]"
                           cachedCodepage="1252"
                           cachedDataType="str"
-                          cachedLength="50"
+                          cachedLength="10"
                           cachedName="Last_Name"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Last_Name]"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Last_Name]" />
@@ -866,7 +839,7 @@
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Prefix]"
                           cachedCodepage="1252"
                           cachedDataType="str"
-                          cachedLength="50"
+                          cachedLength="6"
                           cachedName="Prefix"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Prefix]"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Prefix]" />
@@ -874,7 +847,7 @@
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Income_Level]"
                           cachedCodepage="1252"
                           cachedDataType="str"
-                          cachedLength="50"
+                          cachedLength="12"
                           cachedName="Income_Level"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Income_Level]"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Income_Level]" />
@@ -912,9 +885,7 @@
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[State]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Zip_Code]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="i4"
                           cachedName="Zip_Code"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Zip_Code]"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Zip_Code]" />
@@ -944,25 +915,19 @@
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Giving_Level]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[student_ak]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="i2"
                           cachedName="student_ak"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[student_ak]"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[student_ak]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Start_Date]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="date"
                           cachedName="Start_Date"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Start_Date]"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Start_Date]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[End_Date]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="dbTimeStamp"
                           cachedName="End_Date"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[End_Date]"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[End_Date]" />
@@ -971,33 +936,31 @@
                         isUsed="True">
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[donor_ak]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="i2"
                           name="donor_ak" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[First_Name]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="9"
                           name="First_Name" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Last_Name]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="10"
                           name="Last_Name" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Prefix]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="6"
                           name="Prefix" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Income_Level]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="12"
                           name="Income_Level" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Address_1]"
@@ -1025,9 +988,7 @@
                           name="State" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Zip_Code]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="i4"
                           name="Zip_Code" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
@@ -1049,21 +1010,15 @@
                           name="Giving_Level" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[student_ak]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="i2"
                           name="student_ak" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Start_Date]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="dbTimeStamp"
                           name="Start_Date" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[End_Date]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="dbTimeStamp"
                           name="End_Date" />
                       </externalMetadataColumns>
                     </input>
@@ -1108,8 +1063,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{9BE4218F-3DE1-45A2-9BE8-EB791063BDA7}"
-          DTS:ObjectName="{9BE4218F-3DE1-45A2-9BE8-EB791063BDA7}"
+          DTS:DTSID="{48EBFD3A-46D6-4E27-872B-DA0271B66A7F}"
+          DTS:ObjectName="{48EBFD3A-46D6-4E27-872B-DA0271B66A7F}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::DonorFile" />
       </DTS:ForEachVariableMappings>

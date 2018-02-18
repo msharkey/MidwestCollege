@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">OMC-5CG6151GZF</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/5vH+6+EfkKFoxi8h++xUQAAAAACAAAAAAADZgAAwAAAABAAAADZphI/Z7McG/0lqPdQWZYAAAAAAASAAACgAAAAEAAAAAxiEHB7ZhaSJbswrfeNx/aIAAAA1t4SBNTg2g8pgTnmOo0JK/C3Qz+xNM5KiFwu4iMO85uD9alAil9LdcDjGZBsMuriV64atp3P/hNrEIQQrNbm6LbondzYa159wqCNk11shVVIkB4qPmXQEvOY+dCG9CLGDDC5QYGzA0yaROb/DfVnj0Cmrc3g2f2LxdQxVFEAyCyHJI39byAFmhQAAAARtTz8vau/BhmhWXfaeRYrN/BDYA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/5vH+6+EfkKFoxi8h++xUQAAAAACAAAAAAADZgAAwAAAABAAAABtn8CouEbibtRTyfIyDAQPAAAAAASAAACgAAAAEAAAALEK3IO/KwSNYl9rFYU0F2SIAAAAPS1lIi0jZziuP5rNdS9DY1VP6cKTQA05GddEPKf5Ud6TNOYO+sDL/f0zkXUnrPX/wvpzLrq5VDN1CsU32p0g4DQhxbxwdz2hQoM5/bdVPFYKtEr2TKAapvOtsWt1GbpltsyD1Q1fqL6QtseTGXasx8E23gGH92PqDg/T/OgeOv8WRewFrBa2RRQAAAClfmdQzKs7arABYCso5To2gkrRhw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -39,7 +39,6 @@
           <SSIS:Package SSIS:Name="LoadStgClub.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="LoadStgStudentClub.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="MasterControl.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="LoadDimEvent.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="__snapman.StudentDataMart.conmgr" />
@@ -142,10 +141,10 @@
                 <SSIS:Property SSIS:Name="Name">LoadStgDonor</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">9</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">12</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{8C8480DA-F021-4A2A-AA19-900EE2A18359}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{E2A250E4-7EE5-4D8C-B0C6-C0F145F5E26D}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -284,8 +283,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -327,10 +324,10 @@
                 <SSIS:Property SSIS:Name="Name">LoadStgDonation</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">13</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">15</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{17FFFC51-5C92-4352-9941-F4D3ED43FE6F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{BC50F4B6-12B6-4BA0-ABFA-1ACD60AD3A75}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -469,8 +466,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -512,10 +507,10 @@
                 <SSIS:Property SSIS:Name="Name">LoadStgEvent</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">13</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">20</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{030C76DE-58D5-42B0-A897-E489ABBE50E7}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{A21C028F-B943-4732-88C6-842B38B2D076}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -578,7 +573,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\MaSharkey\Desktop\MidwestUniveristy\MidwestUniveristyFlatFiles\Event\Event.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\MaSharkey\Desktop\MidwestUniveristy\MidwestUniveristyFlatFiles\Event\event.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -669,8 +664,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -712,10 +705,10 @@
                 <SSIS:Property SSIS:Name="Name">LoadStgMajor</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">3</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{30B16DC5-A3CE-47D5-85C6-F4B73D7C91E4}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{C79C1E90-C4CA-4652-9DC2-B8ACECFB1754}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -778,7 +771,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\MaSharkey\Desktop\MidwestUniveristy\MidwestUniveristyFlatFiles\Major\Major.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\MaSharkey\Desktop\MidwestUniveristy\MidwestUniveristyFlatFiles\Major\major.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -869,8 +862,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -912,10 +903,10 @@
                 <SSIS:Property SSIS:Name="Name">LoadStgStudent</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">31</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">54</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{1B48F476-8565-460B-943F-0577BA08637C}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{EF3834DB-EE16-428E-8CAA-2EE4D7D1B97B}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1112,10 +1103,10 @@
                 <SSIS:Property SSIS:Name="Name">LoadStgClub</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">3</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">6</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{E6C2065B-0072-4BF8-B897-587D8F18A1F5}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{824F9222-4893-41A7-99D3-526FF5BE5E63}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1178,7 +1169,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\MaSharkey\Desktop\MidwestUniveristy\MidwestUniveristyFlatFiles\Club\Club.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\MaSharkey\Desktop\MidwestUniveristy\MidwestUniveristyFlatFiles\Club\club.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1269,8 +1260,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1312,10 +1301,10 @@
                 <SSIS:Property SSIS:Name="Name">LoadStgStudentClub</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">3</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{077FC2ED-C41F-4690-A274-84377DDA94D7}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{70245819-648D-4C96-B8B5-C4BB787B3CA1}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1454,8 +1443,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1497,27 +1484,10 @@
                 <SSIS:Property SSIS:Name="Name">MasterControl</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">9</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">13</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{95953308-015C-4287-8FF4-0EA33860D635}</SSIS:Property>
-                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
-              </SSIS:Properties>
-              <SSIS:Parameters />
-            </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="LoadDimEvent.dtsx">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{3B6C7900-6FC0-47CC-9B35-3F43B6493A36}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">LoadDimEvent</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionComments">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{6BBEDDF7-31DF-4610-94E1-B5242E74B158}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{ACD58928-6890-4238-9516-150E47114ADC}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1531,7 +1501,28 @@
     </Manifest>
   </DeploymentModelSpecificContent>
   <ControlFlowParts />
-  <Miscellaneous />
+  <Miscellaneous>
+    <ProjectItem>
+      <Name>Explore.sql</Name>
+      <FullPath>Explore.sql</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ExploreData.R</Name>
+      <FullPath>ExploreData.R</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>MidwestUniveristy.vsdx</Name>
+      <FullPath>MidwestUniveristy.vsdx</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>MidwestUniversityOLTP.JPG</Name>
+      <FullPath>MidwestUniversityOLTP.JPG</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Transform.sql</Name>
+      <FullPath>Transform.sql</FullPath>
+    </ProjectItem>
+  </Miscellaneous>
   <Configurations>
     <Configuration>
       <Name>Development</Name>

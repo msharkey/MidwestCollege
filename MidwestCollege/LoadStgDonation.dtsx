@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="LoadStgDonation"
   DTS:PackageType="5"
-  DTS:VersionBuild="13"
-  DTS:VersionGUID="{17FFFC51-5C92-4352-9941-F4D3ED43FE6F}">
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{B2FCA607-BCE5-4CAE-8A26-130DAB762AB4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -36,47 +36,43 @@
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="donation_ak "
-              DTS:DTSID="{ADB9B40E-C5C2-444D-8795-456A36BF1911}"
+              DTS:DTSID="{17A52174-811E-416B-AB93-F85902A4F4F6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName=" donor_ak "
-              DTS:DTSID="{22A016F1-A09A-47FB-AF33-AAE739B22D93}"
+              DTS:DTSID="{E3D0275B-4ACE-4E75-ACD3-6311FDDB46FE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName=" event_ak "
-              DTS:DTSID="{0C4A7118-1FD8-4E4B-9DC3-F83DEBF93032}"
+              DTS:DTSID="{65ECB7A9-3B3D-484C-A860-C682DFA9E55F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="131"
+              DTS:DataPrecision="18"
               DTS:TextQualified="True"
               DTS:ObjectName=" Donation_Amount "
-              DTS:DTSID="{E2444088-1DCF-4902-A8D5-2E5DBE9F2640}"
+              DTS:DTSID="{C6FE457F-E180-4CF6-BB6E-E887C357A65A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName=" donation_date"
-              DTS:DTSID="{101271BC-8A23-478C-8D55-226D7F608FC0}"
+              DTS:DTSID="{55C7EFF2-3338-4D7D-8C12-0BF55909212B}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -140,7 +136,7 @@
             <FEFEProperty
               Folder="C:\Users\MaSharkey\Desktop\MidwestUniveristy\MidwestUniveristyFlatFiles\Donations" />
             <FEFEProperty
-              FileSpec="Donations*.csv" />
+              FileSpec="Donations*.txt" />
             <FEFEProperty
               FileNameRetrievalType="0" />
             <FEFEProperty
@@ -197,12 +193,10 @@
                       <outputColumns>
                         <outputColumn
                           refId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].Columns[donation_ak ]"
-                          codePage="1252"
-                          dataType="str"
+                          dataType="i8"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[donation_ak ]"
-                          length="50"
                           lineageId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].Columns[donation_ak ]"
                           name="donation_ak "
                           truncationRowDisposition="FailComponent">
@@ -219,12 +213,10 @@
                         </outputColumn>
                         <outputColumn
                           refId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ donor_ak ]"
-                          codePage="1252"
-                          dataType="str"
+                          dataType="i8"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ donor_ak ]"
-                          length="50"
                           lineageId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ donor_ak ]"
                           name=" donor_ak "
                           truncationRowDisposition="FailComponent">
@@ -241,12 +233,10 @@
                         </outputColumn>
                         <outputColumn
                           refId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ event_ak ]"
-                          codePage="1252"
-                          dataType="str"
+                          dataType="i8"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ event_ak ]"
-                          length="50"
                           lineageId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ event_ak ]"
                           name=" event_ak "
                           truncationRowDisposition="FailComponent">
@@ -263,14 +253,13 @@
                         </outputColumn>
                         <outputColumn
                           refId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Donation_Amount ]"
-                          codePage="1252"
-                          dataType="str"
+                          dataType="numeric"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Donation_Amount ]"
-                          length="50"
                           lineageId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Donation_Amount ]"
                           name=" Donation_Amount "
+                          precision="18"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -285,12 +274,10 @@
                         </outputColumn>
                         <outputColumn
                           refId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ donation_date]"
-                          codePage="1252"
-                          dataType="str"
+                          dataType="dbTimeStamp"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ donation_date]"
-                          length="50"
                           lineageId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ donation_date]"
                           name=" donation_date"
                           truncationRowDisposition="FailComponent">
@@ -310,33 +297,24 @@
                         isUsed="True">
                         <externalMetadataColumn
                           refId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[donation_ak ]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="i8"
                           name="donation_ak " />
                         <externalMetadataColumn
                           refId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ donor_ak ]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="i8"
                           name=" donor_ak " />
                         <externalMetadataColumn
                           refId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ event_ak ]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="i8"
                           name=" event_ak " />
                         <externalMetadataColumn
                           refId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ Donation_Amount ]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name=" Donation_Amount " />
+                          dataType="numeric"
+                          name=" Donation_Amount "
+                          precision="18" />
                         <externalMetadataColumn
                           refId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ donation_date]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="dbTimeStamp"
                           name=" donation_date" />
                       </externalMetadataColumns>
                     </output>
@@ -443,41 +421,32 @@
                       <inputColumns>
                         <inputColumn
                           refId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[donation_ak ]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="i8"
                           cachedName="donation_ak "
-                          externalMetadataColumnId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[donation_ak]"
+                          externalMetadataColumnId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[donation_ak ]"
                           lineageId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].Columns[donation_ak ]" />
                         <inputColumn
                           refId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ donor_ak ]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="i8"
                           cachedName=" donor_ak "
                           externalMetadataColumnId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[donor_ak]"
                           lineageId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ donor_ak ]" />
                         <inputColumn
                           refId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ event_ak ]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="i8"
                           cachedName=" event_ak "
                           externalMetadataColumnId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[event_ak]"
                           lineageId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ event_ak ]" />
                         <inputColumn
                           refId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ Donation_Amount ]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="numeric"
                           cachedName=" Donation_Amount "
+                          cachedPrecision="18"
                           externalMetadataColumnId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Donation_Amount]"
                           lineageId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ Donation_Amount ]" />
                         <inputColumn
                           refId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ donation_date]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="dbTimeStamp"
                           cachedName=" donation_date"
                           externalMetadataColumnId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[donation_date]"
                           lineageId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\Flat File Source.Outputs[Flat File Source Output].Columns[ donation_date]" />
@@ -485,9 +454,9 @@
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[donation_ak]"
+                          refId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[donation_ak ]"
                           dataType="i4"
-                          name="donation_ak" />
+                          name="donation_ak " />
                         <externalMetadataColumn
                           refId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[donor_ak]"
                           dataType="i4"
@@ -504,7 +473,7 @@
                           scale="2" />
                         <externalMetadataColumn
                           refId="Package\FEL - Process Donation Files\DFT - Load Donation Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[donation_date]"
-                          dataType="dbDate"
+                          dataType="dbTimeStamp"
                           name="donation_date" />
                       </externalMetadataColumns>
                     </input>
@@ -549,8 +518,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{721B2EFC-3316-4C7B-B529-C6A19220B911}"
-          DTS:ObjectName="{721B2EFC-3316-4C7B-B529-C6A19220B911}"
+          DTS:DTSID="{79F7CE48-15B2-4359-9AEA-EFAA0E201C9C}"
+          DTS:ObjectName="{79F7CE48-15B2-4359-9AEA-EFAA0E201C9C}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::donationsfile" />
       </DTS:ForEachVariableMappings>
@@ -585,7 +554,7 @@
         <NodeLayout
           Size="207,42"
           Id="Package\FEL - Process Donation Files\DFT - Load Donation Stage"
-          TopLeft="96,70" />
+          TopLeft="84,52" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"

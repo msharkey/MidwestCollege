@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="LoadStgStudentClub"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{077FC2ED-C41F-4690-A274-84377DDA94D7}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{5451314F-B7BC-48D4-B318-4D21DE95B859}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -36,20 +36,18 @@
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="club_ak"
-              DTS:DTSID="{FD2844E5-A70B-4655-904E-B87AD248E239}"
+              DTS:DTSID="{A3F14B44-3CA8-4595-9E6E-C58BE66D9D82}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="student_ak"
-              DTS:DTSID="{7949C012-7D21-478A-93D4-E392A4EC7B2B}"
+              DTS:DTSID="{687FDAF0-ED86-41C0-8C22-4A41ACAECD4A}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -103,7 +101,7 @@
             <FEFEProperty
               Folder="C:\Users\MaSharkey\Desktop\MidwestUniveristy\MidwestUniveristyFlatFiles\StudentClub" />
             <FEFEProperty
-              FileSpec="StudentClub*.csv" />
+              FileSpec="StudentClub*.txt" />
             <FEFEProperty
               FileNameRetrievalType="0" />
             <FEFEProperty
@@ -160,12 +158,10 @@
                       <outputColumns>
                         <outputColumn
                           refId="Package\Foreach Loop Container\DFT- Load StudentClub Stage\Flat File Source.Outputs[Flat File Source Output].Columns[club_ak]"
-                          codePage="1252"
-                          dataType="str"
+                          dataType="i1"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT- Load StudentClub Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[club_ak]"
-                          length="50"
                           lineageId="Package\Foreach Loop Container\DFT- Load StudentClub Stage\Flat File Source.Outputs[Flat File Source Output].Columns[club_ak]"
                           name="club_ak"
                           truncationRowDisposition="FailComponent">
@@ -182,12 +178,10 @@
                         </outputColumn>
                         <outputColumn
                           refId="Package\Foreach Loop Container\DFT- Load StudentClub Stage\Flat File Source.Outputs[Flat File Source Output].Columns[student_ak]"
-                          codePage="1252"
-                          dataType="str"
+                          dataType="i2"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT- Load StudentClub Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[student_ak]"
-                          length="50"
                           lineageId="Package\Foreach Loop Container\DFT- Load StudentClub Stage\Flat File Source.Outputs[Flat File Source Output].Columns[student_ak]"
                           name="student_ak"
                           truncationRowDisposition="FailComponent">
@@ -207,15 +201,11 @@
                         isUsed="True">
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\DFT- Load StudentClub Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[club_ak]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="i1"
                           name="club_ak" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\DFT- Load StudentClub Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[student_ak]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="i2"
                           name="student_ak" />
                       </externalMetadataColumns>
                     </output>
@@ -322,17 +312,13 @@
                       <inputColumns>
                         <inputColumn
                           refId="Package\Foreach Loop Container\DFT- Load StudentClub Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[club_ak]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="i1"
                           cachedName="club_ak"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT- Load StudentClub Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[club_ak]"
                           lineageId="Package\Foreach Loop Container\DFT- Load StudentClub Stage\Flat File Source.Outputs[Flat File Source Output].Columns[club_ak]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\DFT- Load StudentClub Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[student_ak]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="i2"
                           cachedName="student_ak"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT- Load StudentClub Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[student_ak]"
                           lineageId="Package\Foreach Loop Container\DFT- Load StudentClub Stage\Flat File Source.Outputs[Flat File Source Output].Columns[student_ak]" />
@@ -341,15 +327,11 @@
                         isUsed="True">
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\DFT- Load StudentClub Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[club_ak]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="i2"
                           name="club_ak" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\DFT- Load StudentClub Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[student_ak]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="i2"
                           name="student_ak" />
                       </externalMetadataColumns>
                     </input>
@@ -394,8 +376,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{CC2611E0-2ED3-4383-8031-E616FF5E9A4A}"
-          DTS:ObjectName="{CC2611E0-2ED3-4383-8031-E616FF5E9A4A}"
+          DTS:DTSID="{F50844DD-CAD6-47DD-A787-81578E5D11EA}"
+          DTS:ObjectName="{F50844DD-CAD6-47DD-A787-81578E5D11EA}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::studentclubfile" />
       </DTS:ForEachVariableMappings>
@@ -469,13 +451,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151,42"
-          Id="Package\Foreach Loop Container\DFT- Load StudentClub Stage\Flat File Source"
-          TopLeft="377,133" />
-        <NodeLayout
           Size="171,42"
           Id="Package\Foreach Loop Container\DFT- Load StudentClub Stage\OLE DB Destination"
           TopLeft="365,290" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Foreach Loop Container\DFT- Load StudentClub Stage\Flat File Source"
+          TopLeft="377,133" />
         <EdgeLayout
           Id="Package\Foreach Loop Container\DFT- Load StudentClub Stage.Paths[Flat File Source Output]"
           TopLeft="451.5,175">

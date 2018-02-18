@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="LoadStgEvent"
   DTS:PackageType="5"
-  DTS:VersionBuild="13"
-  DTS:VersionGUID="{030C76DE-58D5-42B0-A897-E489ABBE50E7}">
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{A21C028F-B943-4732-88C6-842B38B2D076}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,16 +30,15 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\MaSharkey\Desktop\MidwestUniveristy\MidwestUniveristyFlatFiles\Event\Event.csv">
+          DTS:ConnectionString="C:\Users\MaSharkey\Desktop\MidwestUniveristy\MidwestUniveristyFlatFiles\Event\event.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="event_ak"
-              DTS:DTSID="{4E2A01F6-C723-4805-A5C5-6D9612C670E2}"
+              DTS:DTSID="{6104B624-CA0B-4F30-BC86-03C1111B5C52}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +47,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Event_Name"
-              DTS:DTSID="{EAA0E213-D697-48CD-AA33-845734583D3C}"
+              DTS:DTSID="{0902408D-8550-40D4-A4B5-7804CF3B003E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +56,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Event_Category"
-              DTS:DTSID="{82C92193-3F93-4959-BFCF-6472BFAEB2B9}"
+              DTS:DTSID="{3305F2ED-7344-42C4-9A80-D6274C15FE19}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,34 +65,32 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Event_Location"
-              DTS:DTSID="{755357BD-EA8C-4AFE-8DDA-986F496E64E0}"
+              DTS:DTSID="{EE38A2AE-50FC-4A87-A3D6-5796558E5A1D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Event_Description"
-              DTS:DTSID="{7E6BFF95-6672-43C1-A493-B04A6C192B14}"
+              DTS:DTSID="{84A2D3E9-69C6-4708-A84B-C871E817D339}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="75"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Event_Sponsor"
-              DTS:DTSID="{077D8FB0-D17C-4200-BE49-A26709DDDEAF}"
+              DTS:DTSID="{F833013C-B0E4-4A6F-B8EE-B04F8138276F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Event_Cost"
-              DTS:DTSID="{91C9AE7A-2417-4D46-AB85-DC2B8BF46C3F}"
+              DTS:DTSID="{78774AE6-3514-4218-8284-97D1F9864680}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,16 +99,16 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Event_Department"
-              DTS:DTSID="{CACFFB1A-CCB7-4AEF-B798-F81ABBC809ED}"
+              DTS:DTSID="{8AC0859A-1695-4A6C-8B03-1D64408820D3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="25"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Event_Sub_Department"
-              DTS:DTSID="{7C500018-BE31-4D16-A7EB-58C63F143DE6}"
+              DTS:DTSID="{D61738AC-E021-471D-9149-EB573A9B3A57}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -120,7 +117,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="event_date"
-              DTS:DTSID="{8635CDE2-69D8-4830-9BC6-282C49914F00}"
+              DTS:DTSID="{705D44D6-1BE7-494D-A901-7B551EDA66EC}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -176,12 +173,10 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].Columns[event_ak]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="i2"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].ExternalColumns[event_ak]"
-                      length="50"
                       lineageId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].Columns[event_ak]"
                       name="event_ak"
                       truncationRowDisposition="FailComponent">
@@ -269,7 +264,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].ExternalColumns[Event_Description]"
-                      length="50"
+                      length="255"
                       lineageId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].Columns[Event_Description]"
                       name="Event_Description"
                       truncationRowDisposition="FailComponent">
@@ -291,7 +286,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].ExternalColumns[Event_Sponsor]"
-                      length="50"
+                      length="75"
                       lineageId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].Columns[Event_Sponsor]"
                       name="Event_Sponsor"
                       truncationRowDisposition="FailComponent">
@@ -308,12 +303,10 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].Columns[Event_Cost]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="r4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].ExternalColumns[Event_Cost]"
-                      length="50"
                       lineageId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].Columns[Event_Cost]"
                       name="Event_Cost"
                       truncationRowDisposition="FailComponent">
@@ -357,7 +350,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].ExternalColumns[Event_Sub_Department]"
-                      length="50"
+                      length="25"
                       lineageId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].Columns[Event_Sub_Department]"
                       name="Event_Sub_Department"
                       truncationRowDisposition="FailComponent">
@@ -399,9 +392,7 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].ExternalColumns[event_ak]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="i2"
                       name="event_ak" />
                     <externalMetadataColumn
                       refId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].ExternalColumns[Event_Name]"
@@ -425,19 +416,17 @@
                       refId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].ExternalColumns[Event_Description]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="255"
                       name="Event_Description" />
                     <externalMetadataColumn
                       refId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].ExternalColumns[Event_Sponsor]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="75"
                       name="Event_Sponsor" />
                     <externalMetadataColumn
                       refId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].ExternalColumns[Event_Cost]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="r4"
                       name="Event_Cost" />
                     <externalMetadataColumn
                       refId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].ExternalColumns[Event_Department]"
@@ -449,7 +438,7 @@
                       refId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].ExternalColumns[Event_Sub_Department]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="25"
                       name="Event_Sub_Department" />
                     <externalMetadataColumn
                       refId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].ExternalColumns[event_date]"
@@ -504,7 +493,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[Stg].[EVENT]</property>
+                  name="OpenRowset">[Stg].[Event]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -562,9 +551,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\DFT - Load Event Stage\EventStage.Inputs[OLE DB Destination Input].Columns[event_ak]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="i2"
                       cachedName="event_ak"
                       externalMetadataColumnId="Package\DFT - Load Event Stage\EventStage.Inputs[OLE DB Destination Input].ExternalColumns[event_ak]"
                       lineageId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].Columns[event_ak]" />
@@ -596,7 +583,7 @@
                       refId="Package\DFT - Load Event Stage\EventStage.Inputs[OLE DB Destination Input].Columns[Event_Description]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="255"
                       cachedName="Event_Description"
                       externalMetadataColumnId="Package\DFT - Load Event Stage\EventStage.Inputs[OLE DB Destination Input].ExternalColumns[Event_Description]"
                       lineageId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].Columns[Event_Description]" />
@@ -604,15 +591,13 @@
                       refId="Package\DFT - Load Event Stage\EventStage.Inputs[OLE DB Destination Input].Columns[Event_Sponsor]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="75"
                       cachedName="Event_Sponsor"
                       externalMetadataColumnId="Package\DFT - Load Event Stage\EventStage.Inputs[OLE DB Destination Input].ExternalColumns[Event_Sponsor]"
                       lineageId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].Columns[Event_Sponsor]" />
                     <inputColumn
                       refId="Package\DFT - Load Event Stage\EventStage.Inputs[OLE DB Destination Input].Columns[Event_Cost]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="r4"
                       cachedName="Event_Cost"
                       externalMetadataColumnId="Package\DFT - Load Event Stage\EventStage.Inputs[OLE DB Destination Input].ExternalColumns[Event_Cost]"
                       lineageId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].Columns[Event_Cost]" />
@@ -628,7 +613,7 @@
                       refId="Package\DFT - Load Event Stage\EventStage.Inputs[OLE DB Destination Input].Columns[Event_Sub_Department]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="25"
                       cachedName="Event_Sub_Department"
                       externalMetadataColumnId="Package\DFT - Load Event Stage\EventStage.Inputs[OLE DB Destination Input].ExternalColumns[Event_Sub_Department]"
                       lineageId="Package\DFT - Load Event Stage\EventFlatFile.Outputs[Flat File Source Output].Columns[Event_Sub_Department]" />
@@ -645,9 +630,7 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\DFT - Load Event Stage\EventStage.Inputs[OLE DB Destination Input].ExternalColumns[event_ak]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="i2"
                       name="event_ak" />
                     <externalMetadataColumn
                       refId="Package\DFT - Load Event Stage\EventStage.Inputs[OLE DB Destination Input].ExternalColumns[Event_Name]"
@@ -671,19 +654,17 @@
                       refId="Package\DFT - Load Event Stage\EventStage.Inputs[OLE DB Destination Input].ExternalColumns[Event_Description]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="255"
                       name="Event_Description" />
                     <externalMetadataColumn
                       refId="Package\DFT - Load Event Stage\EventStage.Inputs[OLE DB Destination Input].ExternalColumns[Event_Sponsor]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="75"
                       name="Event_Sponsor" />
                     <externalMetadataColumn
                       refId="Package\DFT - Load Event Stage\EventStage.Inputs[OLE DB Destination Input].ExternalColumns[Event_Cost]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="r4"
                       name="Event_Cost" />
                     <externalMetadataColumn
                       refId="Package\DFT - Load Event Stage\EventStage.Inputs[OLE DB Destination Input].ExternalColumns[Event_Department]"
@@ -695,7 +676,7 @@
                       refId="Package\DFT - Load Event Stage\EventStage.Inputs[OLE DB Destination Input].ExternalColumns[Event_Sub_Department]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="25"
                       name="Event_Sub_Department" />
                     <externalMetadataColumn
                       refId="Package\DFT - Load Event Stage\EventStage.Inputs[OLE DB Destination Input].ExternalColumns[event_date]"
@@ -833,39 +814,27 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="132,42"
+          Id="Package\DFT - Load Event Stage\EventStage"
+          TopLeft="339,215" />
+        <NodeLayout
           Size="139,42"
           Id="Package\DFT - Load Event Stage\EventFlatFile"
           TopLeft="336,82" />
-        <NodeLayout
-          Size="132,42"
-          Id="Package\DFT - Load Event Stage\EventStage"
-          TopLeft="330,234" />
         <EdgeLayout
           Id="Package\DFT - Load Event Stage.Paths[Flat File Source Output]"
-          TopLeft="405.5,124">
+          TopLeft="405.25,124">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-9.5,110"
+              EndConnector="0,91"
               Start="0,0"
-              End="-9.5,102.5">
+              End="0,83.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,51" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,51"
-                    Point2="0,55"
-                    Point3="-4,55" />
-                  <mssgle:LineSegment
-                    End="-5.5,55" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-5.5,55"
-                    Point2="-9.5,55"
-                    Point3="-9.5,59" />
-                  <mssgle:LineSegment
-                    End="-9.5,102.5" />
+                    End="0,83.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

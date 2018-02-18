@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="LoadStgClub"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{E6C2065B-0072-4BF8-B897-587D8F18A1F5}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{824F9222-4893-41A7-99D3-526FF5BE5E63}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,16 +30,15 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\MaSharkey\Desktop\MidwestUniveristy\MidwestUniveristyFlatFiles\Club\Club.csv">
+          DTS:ConnectionString="C:\Users\MaSharkey\Desktop\MidwestUniveristy\MidwestUniveristyFlatFiles\Club\club.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="club_ak"
-              DTS:DTSID="{52C5D91E-DE25-4BC4-BF75-FEBB6AE8D552}"
+              DTS:DTSID="{34E7E82D-72EC-45E1-A9E8-8BFBFBBF09E0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +47,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Club"
-              DTS:DTSID="{FAD3314E-70D9-4297-A18D-DDD2E08F8DED}"
+              DTS:DTSID="{D5478CC1-F336-4F84-9577-148EA3D6DC4B}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -104,12 +103,10 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\DFT - Load Club Stage\Flat File Source.Outputs[Flat File Source Output].Columns[club_ak]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT - Load Club Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[club_ak]"
-                      length="50"
                       lineageId="Package\DFT - Load Club Stage\Flat File Source.Outputs[Flat File Source Output].Columns[club_ak]"
                       name="club_ak"
                       truncationRowDisposition="FailComponent">
@@ -151,9 +148,7 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\DFT - Load Club Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[club_ak]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="i4"
                       name="club_ak" />
                     <externalMetadataColumn
                       refId="Package\DFT - Load Club Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Club]"
@@ -266,9 +261,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\DFT - Load Club Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[club_ak]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="i4"
                       cachedName="club_ak"
                       externalMetadataColumnId="Package\DFT - Load Club Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[club_ak]"
                       lineageId="Package\DFT - Load Club Stage\Flat File Source.Outputs[Flat File Source Output].Columns[club_ak]" />
@@ -285,9 +278,7 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\DFT - Load Club Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[club_ak]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="i4"
                       name="club_ak" />
                     <externalMetadataColumn
                       refId="Package\DFT - Load Club Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Club]"
@@ -413,27 +404,27 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="171,42"
-          Id="Package\DFT - Load Club Stage\OLE DB Destination"
-          TopLeft="405,338" />
-        <NodeLayout
           Size="151,42"
           Id="Package\DFT - Load Club Stage\Flat File Source"
-          TopLeft="412,151" />
+          TopLeft="312,124" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\DFT - Load Club Stage\OLE DB Destination"
+          TopLeft="303,262" />
         <EdgeLayout
           Id="Package\DFT - Load Club Stage.Paths[Flat File Source Output]"
-          TopLeft="489,193">
+          TopLeft="388,166">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,145"
+              EndConnector="0,96"
               Start="0,0"
-              End="0,137.5">
+              End="0,88.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,137.5" />
+                    End="0,88.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

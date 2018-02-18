@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MasterControl"
   DTS:PackageType="5"
-  DTS:VersionBuild="12"
-  DTS:VersionGUID="{CABB78F0-7066-45B4-8100-44180227CBA9}">
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{ACD58928-6890-4238-9516-150E47114ADC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -36,7 +36,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="EST -  Load Dim Event"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -53,7 +53,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="EST -  Load Dim Student"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -82,7 +82,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="EST - Load Fact Donation"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -116,7 +116,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="EST - Load Fact StudentPerformance"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -289,41 +289,6 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="185,42"
-          Id="Package\Seq - Load Stage\EPT - LoadStgClub"
-          TopLeft="18,22" />
-        <NodeLayout
-          Size="188,42"
-          Id="Package\Seq - Load Stage\EPT - LoadStgDonation"
-          TopLeft="232,22" />
-        <NodeLayout
-          Size="174,42"
-          Id="Package\Seq - Load Stage\EPT - LoadStgDonor"
-          TopLeft="16,80" />
-        <NodeLayout
-          Size="169,42"
-          Id="Package\Seq - Load Stage\EPT- LoadStgEvent"
-          TopLeft="236,84" />
-        <NodeLayout
-          Size="172,42"
-          Id="Package\Seq - Load Stage\EPT - LoadStgMajor"
-          TopLeft="20,146" />
-        <NodeLayout
-          Size="182,42"
-          Id="Package\Seq - Load Stage\EPT - LoadStgStudent"
-          TopLeft="230,146" />
-        <NodeLayout
-          Size="204,42"
-          Id="Package\Seq - Load Stage\EPT - LoadStgStudentClub"
-          TopLeft="16,208" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="453,285"
-          Size="453,328"
-          Id="Package\Seq - Load Stage"
-          TopLeft="249,15" />
-        <NodeLayout
           Size="172,42"
           Id="Package\Seq - Load Dimensions\EST -  Load Dim Event"
           TopLeft="32,14" />
@@ -337,10 +302,64 @@
           PanelSize="442,114"
           Size="442,157"
           Id="Package\Seq - Load Dimensions"
-          TopLeft="253,368" />
+          TopLeft="484,387" />
+        <NodeLayout
+          Size="199,42"
+          Id="Package\Seq - Load Facts\EST - Load Fact Donation"
+          TopLeft="26,69" />
+        <NodeLayout
+          Size="183,42"
+          Id="Package\Seq - Load Facts\EST - Load Fact Event"
+          TopLeft="24,12" />
+        <NodeLayout
+          Size="253,42"
+          Id="Package\Seq - Load Facts\EST - Load Fact StudentPerformance"
+          TopLeft="221,10" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="480,130"
+          Size="480,173"
+          Id="Package\Seq - Load Facts"
+          TopLeft="464,571" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Seq - Load Stage\EPT - LoadStgClub"
+          TopLeft="18,22" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Seq - Load Stage\EPT - LoadStgDonation"
+          TopLeft="232,22" />
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Seq - Load Stage\EPT - LoadStgDonor"
+          TopLeft="16,80" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Seq - Load Stage\EPT - LoadStgMajor"
+          TopLeft="20,146" />
+        <NodeLayout
+          Size="182,42"
+          Id="Package\Seq - Load Stage\EPT - LoadStgStudent"
+          TopLeft="230,146" />
+        <NodeLayout
+          Size="204,42"
+          Id="Package\Seq - Load Stage\EPT - LoadStgStudentClub"
+          TopLeft="16,208" />
+        <NodeLayout
+          Size="169,42"
+          Id="Package\Seq - Load Stage\EPT- LoadStgEvent"
+          TopLeft="236,84" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="453,285"
+          Size="453,328"
+          Id="Package\Seq - Load Stage"
+          TopLeft="480,34" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="474.75,343">
+          TopLeft="705.75,362">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -360,28 +379,9 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="183,42"
-          Id="Package\Seq - Load Facts\EST - Load Fact Event"
-          TopLeft="24,12" />
-        <NodeLayout
-          Size="253,42"
-          Id="Package\Seq - Load Facts\EST - Load Fact StudentPerformance"
-          TopLeft="221,10" />
-        <NodeLayout
-          Size="199,42"
-          Id="Package\Seq - Load Facts\EST - Load Fact Donation"
-          TopLeft="26,69" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="480,130"
-          Size="480,173"
-          Id="Package\Seq - Load Facts"
-          TopLeft="233,552" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="473.5,525">
+          TopLeft="704.5,544">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"

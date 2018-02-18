@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="LoadStgMajor"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{30B16DC5-A3CE-47D5-85C6-F4B73D7C91E4}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{C79C1E90-C4CA-4652-9DC2-B8ACECFB1754}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,16 +30,15 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\MaSharkey\Desktop\MidwestUniveristy\MidwestUniveristyFlatFiles\Major\Major.csv">
+          DTS:ConnectionString="C:\Users\MaSharkey\Desktop\MidwestUniveristy\MidwestUniveristyFlatFiles\Major\major.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="major_ak"
-              DTS:DTSID="{233623AD-2A7E-48D9-9385-DA25B4AA7CA9}"
+              DTS:DTSID="{2DC615BE-5FB2-42F3-9EB1-D47F02E94DBD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +47,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Major"
-              DTS:DTSID="{DCF0D797-0E7C-4082-9D3A-60118495B860}"
+              DTS:DTSID="{B4A2D0E1-3DCC-4833-97F5-691BA8B1D39E}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -104,12 +103,10 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\DFT - Load Major\Flat File Source.Outputs[Flat File Source Output].Columns[major_ak]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="i2"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT - Load Major\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[major_ak]"
-                      length="50"
                       lineageId="Package\DFT - Load Major\Flat File Source.Outputs[Flat File Source Output].Columns[major_ak]"
                       name="major_ak"
                       truncationRowDisposition="FailComponent">
@@ -151,9 +148,7 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\DFT - Load Major\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[major_ak]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="i2"
                       name="major_ak" />
                     <externalMetadataColumn
                       refId="Package\DFT - Load Major\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Major]"
@@ -266,9 +261,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\DFT - Load Major\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[major_ak]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="i2"
                       cachedName="major_ak"
                       externalMetadataColumnId="Package\DFT - Load Major\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[major_ak]"
                       lineageId="Package\DFT - Load Major\Flat File Source.Outputs[Flat File Source Output].Columns[major_ak]" />
@@ -285,9 +278,7 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\DFT - Load Major\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[major_ak]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="i2"
                       name="major_ak" />
                     <externalMetadataColumn
                       refId="Package\DFT - Load Major\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Major]"
@@ -375,13 +366,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="179,42"
-          Id="Package\EST - Truncate Major"
-          TopLeft="398,147" />
-        <NodeLayout
           Size="161,42"
           Id="Package\DFT - Load Major"
           TopLeft="401,274" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\EST - Truncate Major"
+          TopLeft="398,147" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="484.5,189">
@@ -413,13 +404,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151,42"
-          Id="Package\DFT - Load Major\Flat File Source"
-          TopLeft="369,152" />
-        <NodeLayout
           Size="171,42"
           Id="Package\DFT - Load Major\OLE DB Destination"
           TopLeft="359,295" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\DFT - Load Major\Flat File Source"
+          TopLeft="369,152" />
         <EdgeLayout
           Id="Package\DFT - Load Major.Paths[Flat File Source Output]"
           TopLeft="444.5,194">
